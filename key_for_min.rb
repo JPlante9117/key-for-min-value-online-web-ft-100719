@@ -4,7 +4,7 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   min_num = 1000000
-  name_hash.collect do |name, num|
+  name_hash.each do |name, num|
     #binding.pry
     if num < min_num
       min_num = num
