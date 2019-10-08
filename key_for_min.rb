@@ -4,6 +4,7 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   min_value = 1000000
+  key = nil
   if name_hash == {}
     return nil 
   else
