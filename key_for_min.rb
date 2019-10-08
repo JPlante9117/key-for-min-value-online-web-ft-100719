@@ -10,6 +10,9 @@ def key_for_min_value(name_hash)
       name_hash.collect do |name, number|
         if number < min_value
           name
+          if name_hash.collect.length > 1
+            name_hash.collect.shift
+          end
         end
       end
   end
