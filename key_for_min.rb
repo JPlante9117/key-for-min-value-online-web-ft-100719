@@ -4,7 +4,7 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   name_hash.collect do |name, num|
-    binding.pry
+    #binding.pry
     min_num = num if num < min_num
     key = name if num < min_num
   end
